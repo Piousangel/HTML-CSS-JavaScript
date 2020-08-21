@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style >
+	table{
+		width:500px;
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	
+	th,td{
+		text-align : center;
+		border: 1px solid black;
+	}
+	.txt_c{
+		text-align: right;
+	}
+	thead > tr{
+		height: 50px;
+		background-color: #ababab;
+	}
+	tfoot > tr{
+		height: 35;}
+</style>
+</head>
+<body>
+	<header>
+		<h1>SUM Table</h1>
+	</header>
+	
+	<article>
+		<div>
+			<table>
+				<colgroup>
+					<col width="100"/>
+					<col width="*"/>
+					<col width="150"/>
+					<col width="80"/>
+				</colgroup>
+				
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Phone.N</th>
+						<th>Else</th>
+					</tr>
+				</thead>
+				
+				<tfoot>
+				<tr>
+					<td colspan ="4" class="txt_c"> Design From HS</td>
+				</tr>
+				</tfoot>
+				
+				<tbody>
+					<tr>
+						<td>Lee</td>
+						<td>ill@naver.com</td>
+						<td>010-1111-1111</td>
+					</tr>
+					<tr>
+						<td>Kim</td>
+						<td>kkll@naver.com</td>
+						<td>010-2222-2222</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</article>
+
+</body>
+</html>
