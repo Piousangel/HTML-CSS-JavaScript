@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#v_menu { /* id가 v-Menu인 ul태그를 의미한다.*/
+		/*border: 2px solid black; */
+		border-top: 2px solid black;
+		width: 200px;
+		list-style:none; /* list item 앞에 점 삭제! */
+		padding : 0; /* padding으로 안쪽여백의 위쪽,아래쪽,오른쪽,왼쪽 여백을 0으로제거 or padding-top -left*/
+		margin : 0;	 /*바깥쪽 여백을 제거*/
+		height-top: 60px;
+	}
+	
+	#v_menu>li{/*id가 v_menu인 ul태그의 자식들중 이름이 li인 요소들만 선택 적용한다.*/
+		border: 2px solid black;
+		border-top: none;
+		height: 58px; /*위쪽 보더는 생략된 상태이고 , 아래쪽 보더만 2px 차지하고 있으니
+						60px의 높이를 지정하기 위해서는 58px로 지정되어야 한다.*/
+					  /*너비는 200 px로 지정해야한다.*/
+		width: 196px;
+		text-align: center;
+		background-color: #00bfff;
+	}
+	
+	#v_menu>li>a{
+		/* a태그의 크기를 조정할 수 없으므로 
+		   a태그를 블록레벨로 변경시킨다. by display: block*/
+		display: block;
+		width: 100%;
+		height: 100%;
+		/*border: 1px solid red;*/
+		line-height: 58px;     /*퍼센테이지가 적용이 안됨 직접 적어줘야함.*/
+		text-decoration: none; /*a태그 글자 밑줄 없애기*/
+		font-size: 30px;
+		font-weight: bold;     /*글꼴 style*/
+		color: #000;
+	}
+	
+	#v_menu>li>a:hover{/*각각의 a태그에 마우스를 올렸을때 동작*/
+		background-color: #fff;
+		color: #00bfff;
+	}
+	
+</style>
+</head>
+<body>
+	<h1>수직 메뉴</h1>
+	<div id="menu">
+		<ul id="v_menu">
+			<li><a href="">메&nbsp;&nbsp;&nbsp;일</a></li>
+			<li><a href="">카&nbsp;&nbsp;&nbsp;페</a></li>
+			<li><a href="">블로그</a></li>
+			<li><a href="">지식인</a></li>
+		</ul>
+	</div>
+</body>
+</html>

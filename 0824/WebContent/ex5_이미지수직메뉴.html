@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>  /*ul태그들 중 id가 v_menu인 요소에게 적용 ul #v_munu 이런식으로 한칸띄우면 자손중에 v_menu찾음..*/
+	ul#v_menu{
+		margin: 0;
+		padding: 0;
+		width: 300px;
+		list-style: none; /*앞에 점없애기*/
+		
+	}
+	
+	ul#v_menu>li{
+		margin: 0;
+		width: 300px;
+		height: 100px;
+	}
+	/*li태그 안에 존재하는 a태그를 선택하여, 크기를 li태그와 같게 한다.*/
+	ul#v_menu>li>a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-decoration: none; /*a태그 글자 밑줄 없애기*/
+		
+		/*문자열을 보이지 않게 하기 위해 화면 밖으로 빼낸다. */
+		text-indent: -9999px;
+	}
+	
+	/* li태그들 중 id가 mail인 요소안에 a태그 배경이미지로 현재문서가 위치한 곳에서 
+	   images라는 폴더 안에 있는 mail.gif파일을 배경이미지로 지정한다. */
+	ul#v_menu>li#mail>a {              /* ul#v_menu>는 생략가능*/
+		background-image: url("images/mail.gif");
+		background-position: : left top;
+		background-repeat: no-repeat; /*배경 반복 적용 안함!*/
+	}
+	li#cafe>a{
+		background: url("images/cafe.gif") no-repeat left top;
+	}
+	li#blog>a{
+		background-image: url("images/blog.gif");
+		background-position: : left top;
+		background-repeat: no-repeat; /*배경 반복 적용 안함!*/
+	}
+	li#kin>a{
+		background-image: url("images/kin.gif");
+		background-position: : left top;
+		background-repeat: no-repeat; /*배경 반복 적용 안함!*/
+	}
+	li#mail>a:hover{
+		background-position: right top;
+	}
+	li#cafe>a:hover{
+		background-position: right top;
+	}
+	li#blog>a:hover{
+		background-position: right top;
+	}
+	li#kin>a:hover{
+		background-position: right top;
+	}
+</style>
+</head>
+	<body>
+		
+	</body>
+</html>
