@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+	body{
+		margin: 0;
+		padding: 0;
+		color: #fff;
+		background-color: #232323;
+	}
+	
+	div#wrap{
+		width: 700px;
+		border: 1px solid #fff;
+		margin: 50px auto;           /*위,아래      좌우*/
+		margin-bottom: 0px;
+	}
+	
+	div#wrap a{
+		color: #fff;
+	}
+	
+	div#wrap>h1{
+		margin: 10px;
+		border-bottom : 2px solid #fff;
+		font: bold 35px; sans-serif;
+	}
+	
+	ul#carList{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	/*자동차 하나당 너비 170픽셀, 보더는 1픽셀 단선을 흰색으로 지정하고, 
+	  문자열은 무조건 가운대 맞춤. 바깥쪽 여백은 위쪽과 오른쪽은 0, 아래쪽과 왼쪽은 46px 지정 */
+	  
+	.carBox{
+		float: left;
+		width: 170px;
+		border : 1px solid white;
+		text-align: center;
+		margin: 0px 0px 46px 46px;
+		padding-top : 5px;
+		padding-bottom: 5px;
+		
+	}
+	
+	.end{
+		float: none;
+		clear: both; /*앞에 적용되고있던 float을 clear을 통해 해제시킴.*/
+	}
+	
+	.carBox>span>a{
+		font: 12px sans-serif;
+		text-decoration: none;
+	}
+	
+	.carBox>a{
+		display: block;
+		width: 160px;
+		height: 120px;
+		border: 5px solid #232323;		
+	}
+	
+	.carBox>a:hover{
+		display: block;
+		border: 5px solid #f00;
+	}

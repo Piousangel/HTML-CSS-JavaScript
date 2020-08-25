@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#wrap{
+		border: 2px solid red;
+		width: 600px;
+		height: 500px;
+		padding: 10px;
+		margin: 30px auto;   /*위아래 , 좌우 순서의 마진 auto는 중앙 정렬됨. 4개로 구분하면 12시부터 시계방향*/
+		position: relative;
+	}
+	
+	/*#box1, #box2, #box3{
+		border : 1px solid black;
+		width	: 100px;
+		height: 100px;
+	}*/
+	
+	#wrap>div{ /*box1, box2, box3 모두포함 */
+		border : 1px solid black;
+		width	: 100px;
+		height: 100px;
+		margin-bottom: 20px;
+		position: absolute;  /* wrap을 기준으로 지정하기 위해 절대적 위치 설정*/ 
+	}
+	
+	#box1{
+		background-color: #c00;
+		top: 20px;
+		left: 20px;
+	}
+	#box2{   /*먼저생긴거기준*/
+		background-color: #0c0;
+		top: 20px;
+		right: 20px;
+		
+	}
+	#box3{
+		background-color: #00c;
+		bottom: 20px;
+		left: 20px;
+	}
+	
+	
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+	
+	</div>
+</body>
+</html>
