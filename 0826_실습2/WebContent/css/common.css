@@ -9,6 +9,7 @@
 	height: 100%;
 	margin: auto;
 	
+	
 }
 
 /******* 상단영역 ********/
@@ -17,6 +18,7 @@
 	width: 970px;
 	height: 140px;
 	margin: auto;
+	
 }
 /* header안에 있는 h1태그의 문자열을 없애고, 배경이미지로
 	logo.png로 설정한다. */
@@ -27,6 +29,7 @@
 						/* 현 css문서는 html/main.html에 적용된다. 이때 이미지의 경로는
 						바로 main.html문서를 기준으로 상대경로를 지정한다. */
 	text-indent: -9999px;
+	
 }
 
 /******* 메뉴작업 ********/
@@ -39,13 +42,14 @@
 	width: 100%;
 	height: 50px;
 	overflow: hidden;
-	border: 10px solid black;
+	
 }
 #header .gnb li{
 	float: left;
 	width: 194px;
 	height: 100%;
 	background-color: #ff5001;
+	
 }
 #header .gnb li.end{
 	clear: both;
@@ -53,6 +57,7 @@
 	height: 0;
 }
 #header .gnb li:hover{ background-color: #e24c09; }
+
 #header .gnb li a{
 	display: block;	
 	height: 100%;
@@ -81,3 +86,78 @@
 #header .gnb li a>span.m05{
 	background-position: 0 -88px
 }
+
+/*****************************************
+		      바닥글(footer) 스타일
+ *****************************************/
+
+#footer{
+	width: auto;
+	background: #eee;
+	margin-top: 100px;
+	
+}
+
+#footer .footer_area{
+	width: 900px;
+	margin: auto;
+	padding: 50px 0;
+}
+
+#footer .foot_guide{
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+#footer .foot_guide li{
+	float: left;
+	padding: 0 10px;
+	border-left: 1px solid #999;
+}
+
+#footer .foot_guide li:first-child{
+	border-left: none;
+	padding-left: 0;
+}
+
+#footer .foot_guide li a{
+	color: #777;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#footer .foot_guide li a:hover{
+	color: #ff5001;
+}
+
+#footer address{
+	font-size: 12px;
+	color: #777;
+	padding-bottom: 6px;
+}
+
+
+
+#footer .copyright{font-size: 11px;}
+
+/*****************************************
+		      기타 스타일
+ *****************************************/
+ 
+ .ellip{
+ 	/*문자열을 공간에 맞도록 표현 및 줄임표 표현*/
+ 	display: inline-block;
+ 	width: 100%;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;   /* 넘으면 엄앰..*/
+ 	white-space: nowrap;       /*...줄임표사용*/
+ }
+ 
+ .fclear{
+ 	float: none;
+ 	clear: both;
+ 	display: block;
+ 	height: 0 !important; /*!important는 CSS를 적용하다 보면 다른
+ 							CSS파일에서 중복 적용되는 부분이 더 생기는데,
+ 							제일 우선시 하겠다는 의미*/
+ }
