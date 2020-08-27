@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+#contents_sub{
+	width: 900px;
+	height: auto;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.sub_title{
+	background: url(../img/sub_title.png) no-repeat;
+	text-indent: -9999px
+	
+}
+
+h1.title01{
+	height: 30px;
+}
+
+p.title_src{
+	
+	font-size: 15px;
+	font-weight: bold;
+	color: #222;
+	padding : 10px 0 40px 5px;
+}
+
+.guide_txt{
+	color: #999;
+	font-size: 11px;
+	padding-bottom: 7px;
+}
+
+.req{
+	display: inline-block;
+	width: 12px;
+	height: 8px;
+	text-indent: -9999px;
+	background: url(../img/bult.png) no-repeat;
+}
+
+.fr{float: right !important;}
+
+/*************테이블 작업 *****************/
+
+.table_type01{
+	border-collapse: collapse;
+	border: 1px solid #ddd;
+	border-left: none;
+	border-right: none;
+}
+
+.table_type01 th{
+	border: 1px solid #ddd;
+	background-color: #efefef;
+	border-left: none;
+	font-weight: bold; 
+	padding: 10px 0 10px 10px;  /*크기를 좀 넓혀줌*/
+}
+
+.table_type01 td{
+	border: 1px solid #ababab;
+	padding: 10px;  /*크기를 좀 넓혀줌*/
+	border-right: none;
+}
+
+/* 테이블 안에 td안에 p태그안에 있는 btn클래스들 적용 **/
+
+label.hidden{
+	display: block;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -9999px;
+	/*display : none; */
+}
+
+/****버튼****/
+.b_bdcheck{
+	width: 60px;
+	height: 25px;
+	background-position: 0 -150px;
+}
+
+tbody td input[type=text],
+tbody td input[type=password]{  /*속성정의시 대괄호 사용*/
+	width: 110px;
+	border: 1px solid #ccc;
+	height: 14px;
+	padding: 5px;
+	border-radius: 3px;  /*모서리 깎기*/
+}
+
+select{
+	width: 120px;
+	padding: .4em 2em.;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	/*appearance: none; 아래화살표 없애기*/
+}
+
+.postcheck{
+	background: url(../img/btn.png) no-repeat;
+	height: 25px;
+	width: 78px;
+	background-position: -60px -150px;
+	border:none;
+	cursor: pointer;  /*커서를 넣어줌*/
+}
+
+
+.btn_center{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.b_confirm{
+	width: 63px;
+	height: 30px;
+	background-position: 0px -110px;
+}
+.b_cancel{
+	width: 63px;
+	height: 30px;
+	background-position: -100px -110px;
+}
+
+
+
