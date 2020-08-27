@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+	div#box{
+		width: 300px;
+		height: 300px;
+		border: 1px solid black;
+	}
+	
+	
+</style>
+
+</head>
+
+<body>
+	<h1>버튼 누르기</h1>
+	
+	<div id="box"></div>
+	<p class="abc">
+		<input type="button" value="RED" onclick="aaa(this)" />&nbsp;
+		<input type="button" value="BLUE" onclick="aaa(this)" />&nbsp;
+		<input type="button" value="GREEN" onclick="aaa(this)" />&nbsp;
+	</p>
+	
+	<script>
+		var box = document.getElementById("box");
+		function aaa(n){	
+			//document.getElementById("box").style.backgroundColor; = c;
+			
+			var v1 = n.value;
+			
+			if(v1.length > 0){
+				box.style.backgroundColor = v1;
+			}
+		}
+		
+	
+	</script>
+	
+	
+</body>
+</html>
